@@ -27,7 +27,7 @@ class CheckBox extends Component {
           <form name="check_box">
             <input
               type="checkbox"
-              className="check_box"
+              className="option-input02 checkbox"
               checked={this.state.check}
               onChange={this.checkChange}
             />
