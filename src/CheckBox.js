@@ -1,37 +1,27 @@
-import React, {Component} from "react";
-import firebase from "firebase/app";
+import React, {useState} from "react";
 
-class CheckBox extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      check: false,
-    };
-    this.checkChange = this.checkChange.bind(this);
-  }
-
-  checkChange(event) {
-    console.log(event.target.checked);
+function CheckBox(props) {
+  let [check, setCheck] = useState(false);
+  let checkChange = (event) => {
     if (event.target.checked === true) {
-      this.setState((state) => ({check: true}));
+      setCheck(true);
     } else {
-      this.setState((state) => ({check: false}));
+      setCheck(false);
     }
-  }
+  };
 
-  render() {
-    return (
-      <div>
-        <form name="check_box">
-          <input
-            type="checkbox"
-            className="option-input02 checkbox"
-            checked={this.state.check}
-            onChange={this.checkChange}
-          />
-        </form>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <form name="check_box">
+        <input
+          type="checkbox"
+          className="option-input02 checkbox"
+          checked={check}
+          onChange={checkChange}
+        />
+      </form>
+    </div>
+  );
 }
+
 export default CheckBox;

@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// Manage this value with firebase
 let text_list = ["test", "red", "value", "blue", "word"];
 
 ReactDOM.render(

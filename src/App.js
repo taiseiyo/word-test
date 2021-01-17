@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {useState} from "react";
 import firebase from "firebase/app";
 import CheckBox from "./CheckBox";
 import "./App.css";
@@ -12,32 +12,25 @@ import "./App.css";
 //   appId: "1:482569027636:web:393808c6c616ab7f0e4a61",
 // };
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: props.text_list,
-      flag: true,
-      color_flag: Array(props.text_list.length).fill(false),
-    };
-  }
+function App(props) {
+  const [text, setText] = useState(props.text_list),
+    flag = true,
+    color_flag = Array(props.text_list.length).fill(false);
 
-  render() {
-    return (
-      <div>
-        <div className="word_list">
-          <ol className="ol_label">
-            {this.state.text.map((value) => (
-              <li>
-                <div>{value}</div>
-                <CheckBox />
-              </li>
-            ))}
-          </ol>
-        </div>
+  return (
+    <div>
+      <div className="word_list">
+        <ol className="ol_label">
+          {text.map((value) => (
+            <li>
+              <div>{value}</div>
+              <CheckBox />
+            </li>
+          ))}
+        </ol>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default App;
