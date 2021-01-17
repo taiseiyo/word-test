@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import firebase from "firebase/app";
-import "./CheckBox.css";
 
 class CheckBox extends Component {
   constructor(props) {
@@ -23,16 +22,14 @@ class CheckBox extends Component {
   render() {
     return (
       <div>
-        <div>
-          <form name="check_box">
-            <input
-              type="checkbox"
-              className="option-input02 checkbox"
-              checked={this.state.check}
-              onChange={this.checkChange}
-            />
-          </form>
-        </div>
+        <form name="check_box">
+          <input
+            type="checkbox"
+            className="option-input02 checkbox"
+            checked={this.state.check}
+            onChange={this.checkChange}
+          />
+        </form>
       </div>
     );
   }
