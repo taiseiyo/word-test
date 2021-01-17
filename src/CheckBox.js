@@ -8,10 +8,10 @@ class CheckBox extends Component {
     this.state = {
       check: false,
     };
-    this.colorChange = this.colorChange.bind(this);
+    this.checkChange = this.checkChange.bind(this);
   }
 
-  colorChange(event) {
+  checkChange(event) {
     console.log(event.target.checked);
     if (event.target.checked === true) {
       this.setState((state) => ({check: true}));
@@ -29,7 +29,7 @@ class CheckBox extends Component {
               type="checkbox"
               className="check_box"
               checked={this.state.check}
-              onChange={this.colorChange}
+              onChange={this.checkChange}
             />
           </form>
         </div>
