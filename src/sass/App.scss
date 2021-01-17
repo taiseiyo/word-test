@@ -2,13 +2,15 @@
     display:flex;
     justify-content:space-around;
     .ol_label{
-	color: red;
+	color: lime;
     }
     .check_box{
-	display:block;
-	position:relative;
-	top:-42px;
+	position: relative;
+	display: flex;
+	justify-content:space-around;
+	top: -26px;
 	margin-left: 150px;
+
     }
 }
 

@@ -23,13 +23,16 @@ class CheckBox extends Component {
   render() {
     return (
       <div>
-        <form className="check_box" name="check_box">
-          <input
-            type="checkbox"
-            checked={this.state.check}
-            onChange={this.colorChange}
-          />
-        </form>
+        <div>
+          <form name="check_box">
+            <input
+              type="checkbox"
+              className="check_box"
+              checked={this.state.check}
+              onChange={this.colorChange}
+            />
+          </form>
+        </div>
       </div>
     );
   }
