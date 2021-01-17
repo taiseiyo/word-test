@@ -1,0 +1,14 @@
+.word_list{
+    display:flex;
+    justify-content:space-around;
+    .ol_label{
+	color: red;
+    }
+    .check_box{
+	display:block;
+	position:relative;
+	top:-42px;
+	margin-left: 150px;
+    }
+}
+

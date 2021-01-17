@@ -4,11 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+let text_list = ["test", "red", "value", "blue", "word"];
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App text_list={text_list} />
   </React.StrictMode>,
-  document.getElementById("root"),
+  document.getElementById("question"),
 );
 
 // If you want to start measuring performance in your app, pass a function
