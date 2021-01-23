@@ -54,7 +54,7 @@ body{
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
+    animation: animate 40s linear infinite;
     bottom: -150px;
     
 }
@@ -138,7 +138,6 @@ body{
 
 
 @keyframes animate {
-
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
@@ -146,11 +145,10 @@ body{
     }
 
     100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
+        transform: translateY(-7350px) rotate(720deg);
+	opacity: 0;
         border-radius: 50%;
     }
-
 }
 
 code {
