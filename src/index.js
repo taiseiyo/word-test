@@ -35,7 +35,7 @@ let start_word = db
 // Manage this value with firebase
 // let text_list = ["test", "red", "value", "blue", "word"];
 let run = async () => {
-  let var1 = await start_word;
+  await start_word;
   ReactDOM.render(
     <React.StrictMode>
       <App text_list={text_list} />
