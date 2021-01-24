@@ -1,0 +1,13 @@
+* Application Name
+*word-text*
+
+* Application Description
+- This app can be used as a simple word book.
+- Since it is a web application, you can study from any device.
+
+* Technology
+- Front end processing: HTML, CSS, JavaScript (React)
+- Back end processing: Firebase
+
+* *Application URL*
+- https://word-test-916dc.web.app/
