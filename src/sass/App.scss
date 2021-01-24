@@ -1,16 +1,109 @@
-.word_list{
-    display:flex;
-    justify-content:space-around;
-    .ol_label{
-	color: lime;
-    }
-    .check_box{
-	position: relative;
-	display: flex;
-	justify-content:space-around;
-	top: -26px;
-	margin-left: 150px;
+.word_list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 2em auto;
+  text-align: left;
 
+  .ol_label {
+    color: #FF5F17;
+    margin-left: 50px;
+  }
+
+  .option-input02 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: -33px;
+    margin-left: 220px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: all 0.15s ease-out 0s;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    background: #d7cbcb;
+    -webkit-appearance: none;
+    appearance: none;
+
+    &:hover {
+      background: #99FF99;
     }
+
+    &:checked {
+      background: lime;
+
+      &::before {
+        font-size: 20px;
+        line-height: 30px;
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        content: '✔';
+        text-align: center;
+      }
+
+      &::after {
+        position: relative;
+        display: block;
+        content: '';
+        -webkit-animation: click-wave 0.65s;
+        animation: click-wave 0.65s;
+        background: lime;
+      }
+    }
+
+    &.radio {
+      border-radius: 50%;
+
+      &::after {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  label {
+    line-height: 40px;
+    display: block;
+  }
+
+  .option-input02:disabled {
+    cursor: not-allowed;
+    background: #b8b7b7;
+
+    &::before {
+      font-size: 20px;
+      line-height: 30px;
+      position: absolute;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      content: '✖︎';
+      text-align: center;
+    }
+  }
 }
 
+@keyframes click-wave {
+  0% {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    opacity: 0.35;
+  }
+
+  100% {
+    width: 200px;
+    height: 200px;
+    margin-top: -80px;
+    margin-left: -80px;
+    margin-right: -80px;
+    opacity: 0;
+  }
+}
