@@ -54,7 +54,7 @@ body{
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    animation: animate 40s linear infinite;
+    animation: animate 50s linear infinite;
     bottom: -150px;
     
 }
@@ -145,7 +145,7 @@ body{
     }
 
     100%{
-        transform: translateY(-7350px) rotate(720deg);
+        transform: translateY(-9330px) rotate(720deg);
 	opacity: 0;
         border-radius: 50%;
     }

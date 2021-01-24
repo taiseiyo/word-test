@@ -12,7 +12,7 @@ function CheckBox(props) {
 
   return (
     <div>
-      <form name="check_box">
+      <form name="check_box" style={{marginBottom: "20px"}}>
         <input
           type="checkbox"
           className="option-input02 checkbox"
