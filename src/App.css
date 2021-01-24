@@ -7,7 +7,8 @@
 }
 
 .word_list .ol_label {
-    color: lime;
+    color: #FF5F17;
+    margin-left: 50px;
 }
 
 
@@ -32,7 +33,7 @@
       display: flex;
       justify-content: space-around;
       top: -33px;
-      margin-left: 240px;
+      margin-left: 220px;
       
       right: 0;
       bottom: 0;
